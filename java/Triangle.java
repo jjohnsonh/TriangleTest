@@ -1,3 +1,4 @@
+//Johmar Johnson 
 import java.util.Scanner;
 
 public class Triangle {
@@ -68,8 +69,15 @@ public class Triangle {
 		double a =num[1];
 		double b =num[2];
 		double result = 0;
+		double R = (a*a+b*b);
+		double L = (Math.round((c*c)*10))/10.0;
 		
-		if ((a*a+b*b)==(Math.round((c*c)*10))/10.0){
+		double r1 = (Math.round((R - 0.012944)*10)/10.0);
+		double r2 = (Math.round((R + 0.012944)*10)/10.0);
+		
+		
+		
+		if ((a*a+b*b)==(Math.round((c*c)*10))/10.0 || L == r1 || L == r2) {
 			 result = 1; 
 		}
 		
